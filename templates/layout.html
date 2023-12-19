@@ -4,7 +4,7 @@
 <title>{% block title %}Welcome{% endblock %} — Lektest</title>
 <body>
   <header>
-    <h1>Lektest</h1>
+    <h1>Fork & Shoe Theatre Cooperative</h1>
     <nav>
       <ul class="nav navbar-nav">
         <li{% if this._path == '/' %} class="active"{% endif
@@ -12,7 +12,10 @@
         {% for href, title in [
           ['/blog', 'Blog'],
           ['/projects', 'Projects'],
-          ['/about', 'About']
+          ['/shows', 'Shows'],
+          ['/calendar', 'Calendar'],
+          ['/get-involved', 'Get Involved'],
+          ['/about', 'About'],
         ] %}
           <li{% if this.is_child_of(href) %} class="active"{% endif
             %}><a href="{{ href|url }}">{{ title }}</a></li>
