@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — Lektest</title>
+<title>{% block title %}Welcome{% endblock %}</title>
 <body>
   <header>
     <h1>Fork & Shoe Theatre Cooperative</h1>
@@ -10,8 +10,7 @@
         <li{% if this._path == '/' %} class="active"{% endif
           %}><a href="{{ '/'|url }}">Welcome</a></li>
         {% for href, title in [
-          ['/blog', 'Blog'],
-          ['/projects', 'Projects'],
+          ['/events', 'Events'],
           ['/shows', 'Shows'],
           ['/calendar', 'Calendar'],
           ['/get-involved', 'Get Involved'],

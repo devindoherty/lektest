@@ -1,6 +1,7 @@
 body {
     font-family: 'Verdana', sans-serif;
     margin: 50px 25px;
+    background: black; /*Remove this to get rid of black background*/
 }
 
 a {
