@@ -8,12 +8,14 @@
     <nav>
       <ul class="nav navbar-nav">
         <!-- <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li> -->
+          %}><a href="{{ '/'|url }}">Welcome</a></li>
+          ['/shows', 'Shows'],        
+        -->
         {% for href, title in [
-          ['/events', 'Events'],
-          ['/shows', 'Shows'],
+          ['/events', 'Events and Shows'],
           ['/calendar', 'Calendar'],
           ['/get-involved', 'Get Involved'],
+          ['/donate', 'Donate'],
           ['/about', 'About'],
         ] %}
           <li{% if this.is_child_of(href) %} class="active"{% endif

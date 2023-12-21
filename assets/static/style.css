@@ -1,10 +1,9 @@
 body {
     font-family: 'Verdana', sans-serif;
     margin: 50px 25px;
-    background-image: url("../images/cardboard_background.jpg");
+    /* background-image: url("../images/cardboard_background.webp"); */
     background-size: 100%;
-
-    /* background: black; */
+    background-color: black;
 }
 
 a {
@@ -20,6 +19,7 @@ header, footer, div.page {
     margin: 0 auto;
     background: #daeef3;
     padding: 20px 30px;
+
 }
 
 header h1 {
@@ -27,12 +27,20 @@ header h1 {
     margin: 0;
     font-weight: normal;
     font-size: 42px;
+    text-align: center;
+    
+}
+
+header a:link {
+    text-decoration: none;
 }
 
 header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: center;
+
 }
 
 header nav ul li {
@@ -44,5 +52,4 @@ header nav ul li {
 div.page {
     background: #f1fbfe;
     /* background-image: url("../images/cardboard_background.jpg") */
-
 }
