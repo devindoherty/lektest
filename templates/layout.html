@@ -4,11 +4,11 @@
 <title>{% block title %}Welcome{% endblock %}</title>
 <body>
   <header>
-    <h1>Fork & Shoe Theatre Cooperative</h1>
+    <h1><a href ="/">Fork & Shoe Theatre Cooperative</a></h1>
     <nav>
       <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
+        <!-- <li{% if this._path == '/' %} class="active"{% endif
+          %}><a href="{{ '/'|url }}">Welcome</a></li> -->
         {% for href, title in [
           ['/events', 'Events'],
           ['/shows', 'Shows'],

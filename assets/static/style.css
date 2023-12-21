@@ -1,7 +1,10 @@
 body {
     font-family: 'Verdana', sans-serif;
     margin: 50px 25px;
-    background: black; /*Remove this to get rid of black background*/
+    background-image: url("../images/cardboard_background.jpg");
+    background-size: 100%;
+
+    /* background: black; */
 }
 
 a {
@@ -40,4 +43,6 @@ header nav ul li {
 
 div.page {
     background: #f1fbfe;
+    /* background-image: url("../images/cardboard_background.jpg") */
+
 }
